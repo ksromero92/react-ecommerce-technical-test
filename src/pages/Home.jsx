@@ -1,11 +1,8 @@
-import { Container } from 'react-bootstrap'
+import ItemListContainer from '../components/ItemListContainer'
 
 function Home() {
   return (
-    <Container className="py-5">
-      <h1>TechStore</h1>
-      <p>Catálogo de productos tecnológicos.</p>
-    </Container>
+    <ItemListContainer greeting="Encuentra tecnología para tu día a día." />
   )
 }
 
