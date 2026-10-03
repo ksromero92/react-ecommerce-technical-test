@@ -1,16 +1,83 @@
-# React + Vite
+# TechStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación e-commerce desarrollada en React como parte de una prueba técnica.
 
-Currently, two official plugins are available:
+TechStore permite consultar un catálogo de productos tecnológicos, visualizar el
+detalle de cada producto, seleccionar cantidades, agregar productos al carrito y
+consultar un resumen de compra antes de finalizarla.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Catálogo de productos obtenido desde una API externa.
+- Vista de detalle por producto.
+- Selector de cantidad.
+- Carrito de compras global mediante Context API.
+- Agregar productos al carrito.
+- Eliminar productos del carrito.
+- Vaciar carrito.
+- Cálculo automático de cantidades.
+- Subtotal por producto.
+- Total general de la compra.
+- Checkout / resumen de compra.
+- Navegación mediante React Router.
+- Manejo de estados de carga y error.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- React Router
+- React Bootstrap
+- Bootstrap
+- Font Awesome
+- Context API
+- React Hooks
+- Fetch API
+- DummyJSON API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Hooks utilizados
+
+- `useState`
+- `useEffect`
+- `useContext`
+- `useMemo`
+- `useParams`
+- `useNavigate`
+
+## Componentes principales
+
+- `NavBar`
+- `CartWidget`
+- `ItemListContainer`
+- `ItemList`
+- `Item`
+- `ItemDetailContainer`
+- `ItemDetail`
+- `ItemQuantitySelector`
+- `AddItemButton`
+- `CartContext`
+- `Checkout`
+- `Brief`
+
+## Flujo principal
+
+1. El usuario ingresa al catálogo.
+2. Selecciona un producto.
+3. Consulta su detalle.
+4. Selecciona la cantidad.
+5. Agrega el producto al carrito.
+6. Consulta el resumen de compra.
+7. Puede eliminar productos o vaciar el carrito.
+8. Visualiza cantidades, subtotales y total.
+9. Finaliza la compra.
+
+## API
+
+Los productos son obtenidos desde DummyJSON mediante llamadas HTTP con `fetch`.
+
+## Ejecutar el proyecto localmente
+
+```bash
+npm install
+npm run dev
+```
